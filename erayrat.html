@@ -5,6 +5,12 @@
 <title>Mon premier code</title>
 
 <link rel="stylesheet" type="text/css" href="mystyle.css" />
+<script type="text/javascript">
+function changeCouleur () {
+	var etoile = document.getElementById('etoileRouge');
+	etoile.setAttribute("fill","green");
+}
+</script>
 </head>
 
 <body>
@@ -23,5 +29,14 @@
         fill="yellow" stroke="navy" stroke-width="10"  />
 </svg>
 <h2>2eme exercice</h2>
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+<polygon onclick="changeCouleur();" fill="#FFFF35" points="306.87,104.951 356.598,258 517.524,258 387.332,352.606 437.061,505.664 306.87,411.078 
+	176.678,505.67 226.407,352.605 96.215,258 257.141,258 "/>
+<polygon onclick="alert('Etoile Rouge')" id="etoileRouge" fill="#FF0000" points="467.739,267.348 428.041,253.455 394.091,278.281 395.037,236.233 360.935,211.616 401.217,199.522 
+	414.091,159.482 438.041,194.055 480.1,193.926 454.619,227.388 "/>
+<rect x="219.043" y="158.652" fill="none" width="365.217" height="161.739"/>
+<text transform="matrix(1 0 0 1 219.0435 167.1724)" font-family="'MyriadPro-Regular'" font-size="12">Coucou les dimi ce sont les plus forts</text>
+</svg>
 </body>
 </html>
