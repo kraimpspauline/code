@@ -3,9 +3,14 @@
 	<title>Mon super beau site</title>
 	<script type="text/javascript">
 
+		var colorPrev;
+		var colorChange="red";
+		
 		function changeCouleur(){
 			var fond = document.getElementById('fond');
-			fond.setAttribute("fill","yellow")
+			colorPrev = fond.getAttribute("fill");
+			fond.setAttribute("fill",colorChange);
+			colorChange=colorPrev;
 		}
 
 	</script>
