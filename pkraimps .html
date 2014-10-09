@@ -5,6 +5,13 @@
 <title>Mon premier code</title>
 
 <link rel="stylesheet" type="text/css" href="mystyle.css" />
+<script>
+	function changeCouleur() {
+		var fond = document.getElementById('fond')
+		fond.setAttribute("fill","green");
+		
+	}
+</script>
 </head>
 
 <body>
@@ -3017,8 +3024,8 @@
 	</g>
 </g>
 <g id="Calque_1">
-	<text transform="matrix(1 0 0 1 137.8774 352.5913)" font-family="'MyriadPro-Regular'" font-size="36">Hello</text>
-	<polygon fill="#2EAE91" points="460.459,462.741 402.293,443.4 352.954,479.775 353.871,419.145 303.763,384.248 362.496,366.116 
+	<text onclick="changeCouleur()" transform="matrix(1 0 0 1 137.8774 352.5913)" font-family="'MyriadPro-Regular'" font-size="36">Hello</text>
+	<polygon onclick="alert('Toto')" id="fond" fill="#2EAE91" points="460.459,462.741 402.293,443.4 352.954,479.775 353.871,419.145 303.763,384.248 362.496,366.116 
 		380.865,308.174 416.248,357.6 477.71,356.686 440.844,405.363 	"/>
 </g>
 </svg>
