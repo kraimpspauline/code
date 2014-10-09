@@ -6,10 +6,15 @@
 
 <link rel="stylesheet" type="text/css" href="../mystyle.css" />
 <script>
+
+	var colorPrev;	
+	var colorChange="red";
 	function changeCouleur(){
 		var fond=document.getElementById('fond');
-		fond.setAttribute("fill","red");
-		}
+		colorPrev = fond.getAttribute("fill");
+		fond.setAttribute("fill",colorChange);
+		colorChange=colorPrev;
+	}
 
 </script>
 

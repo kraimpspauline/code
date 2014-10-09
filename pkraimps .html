@@ -6,10 +6,14 @@
 
 <link rel="stylesheet" type="text/css" href="mystyle.css" />
 <script>
+	var colorPrec;
+	var colorChange="green";
 	function changeCouleur() {
 		var fond = document.getElementById('fond')
-		fond.setAttribute("fill","green");
-		
+		colorPrec = fond.getAttribute("fill");
+		fond.setAttribute("fill",colorChange);
+		colorChange = colorPrec;
+	
 	}
 </script>
 </head>

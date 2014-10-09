@@ -2,9 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <script>
+
+	var colorprec ;
+	var colorchange="yellow";
+	
 	function changeCouleur() {
 		var fond = document.getElementById('fond');
-			fond.setAttribute("fill","red");
+			//fond.setAttribute("fill","yellow");
+			colorprec = fond.getAttribute("fill") ;
+			fond.setAttribute("fill",colorchange);
+			colorchange=colorprec ;
+	}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mon premier code</title>
