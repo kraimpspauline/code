@@ -6,15 +6,27 @@
 
 <link rel="stylesheet" type="text/css" href="mystyle.css" />
 </head>
+<script>
+   function changeCouleur()
+   {
+     var fond = document.getElermentByid("fond");
+	 colorPrec = fond.getAttrivute('fill'
+	 fond.setAttribute("edition","first");
+   }
+	 
+
+</script>
 
 <body>
-<h1>Mon super cours</h1>
+<h1>Mon super courssoso</h1>
 <h2>1er exercice</h2>
 <h3>ajouter du SVG</h3>
+
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
-<polygon fill="#A10D59" points="288.905,279.483 314.29,330.918 371.053,339.167 329.979,379.203 339.675,435.736 288.905,409.044 
-	238.136,435.736 247.833,379.203 206.759,339.167 263.521,330.918 "/>
+<rect onclick="alert('toto')" id="fond"  x="140.938" y="237.488" fill="#EFE97F" stroke="#98D4E2" width="305.681" height="204.662"/>
+<polygon onclick="changeCouleur()" id="rect2"  fill="#A10D59" points="416.456,183.565 441.841,235 498.604,243.249 457.53,283.285 467.226,339.818 416.456,313.126 
+	365.688,339.818 375.383,283.285 334.31,243.249 391.072,235 "/>
 </svg>
   <desc>Example rect01 - rectangle with sharp corners</desc>
 
