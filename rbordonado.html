@@ -5,6 +5,12 @@
 <title>Mon premier code</title>
 
 <link rel="stylesheet" type="text/css" href="../../../Users/DIMI_M1/Desktop/mystyle.css" />
+<script>
+function changeCouleur () {
+	var fond = document.getElementById('fond');
+	fond.setAttribute("edition","first");
+	}
+</script>
 </head>
 
 <body>
@@ -18,7 +24,7 @@
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#000000"/>
 	</radialGradient>
-	<polygon fill="url(#SVGID_1_)" points="124.218,105.95 109.011,102.876 97.857,113.661 96.081,98.248 82.377,90.973 96.487,84.521 
+	<polygon onclick="changeCouleur ()" points="124.218,105.95 109.011,102.876 97.857,113.661 96.081,98.248 82.377,90.973 96.487,84.521 
 		99.171,69.24 109.668,80.666 125.03,78.496 117.408,92.009 	"/>
 	<g>
 		<path d="M123.833,104.222c-2.851-0.576-5.701-1.152-8.552-1.729c-2.113-0.427-5.489-1.851-7.688-1.398
