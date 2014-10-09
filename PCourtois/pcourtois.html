@@ -4,15 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mon premier code</title>
 
-<link rel="stylesheet" type="text/css" href="mystyle.css" />
 <script>
+	var posi = 0;
+	var colors = ["#bf326b","#921849","#730833"];
+	var idsElem = ["etoile","moyen","petite"];
 	function changeCouleur() {
-		var etoile = document.getElementById('etoile');
-		etoile.setAttribute("fill","#bf326b");
-		var moyen = document.getElementById('moyen');
-		moyen.setAttribute("fill","#921849");
-		var petite = document.getElementById('petite');
-		petite.setAttribute("fill","#730833");
+		/*
+		if(posi==0){
+			var etoile = document.getElementById('etoile');
+			etoile.setAttribute("fill",colors[posi]);
+		}
+		if(posi==1){
+			var moyen = document.getElementById('moyen');
+			moyen.setAttribute("fill",colors[posi]);
+		}
+		if(posi==2){
+			var petite = document.getElementById('petite');
+			petite.setAttribute("fill",colors[posi]);
+		}
+		*/
+		var el = document.getElementById(idsElem[posi]);
+		el.setAttribute("fill",colors[posi]);
+		
+		posi ++;
+		if(posi>2)posi=0;
 	}
 	
 	
