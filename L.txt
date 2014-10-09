@@ -11,16 +11,21 @@
 <h1>Mon super cours</h1>
 <h2>1er exercice</h2>
 <h3>ajouter du SVG</h3>
-<svg width="12cm" height="4cm" viewBox="0 0 1200 400"
-     xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <desc>Example rect01 - rectangle with sharp corners</desc>
-
-  <!-- Show outline of canvas using 'rect' element -->
-  <rect x="1" y="1" width="1198" height="398"
-        fill="none" stroke="blue" stroke-width="2"/>
-
-  <rect onclick="alert('Salutos!')" x="400" y="100" width="400" height="200"
-        fill="yellow" stroke="navy" stroke-width="10"  />
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="800px" height="600px" viewBox="-119.211 -32.954 800 600"
+	 enable-background="new -119.211 -32.954 800 600" xml:space="preserve">
+<defs>
+</defs>
+<radialGradient id="SVGID_1_" cx="280.7886" cy="267.0459" r="274.0034" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.004" style="stop-color:#FFF6E3"/>
+	<stop  offset="0.309" style="stop-color:#DCBA92"/>
+	<stop  offset="0.6098" style="stop-color:#AB7241"/>
+	<stop  offset="0.7809" style="stop-color:#914E20"/>
+	<stop  offset="1" style="stop-color:#5B1E1B"/>
+</radialGradient>
+<polygon fill="url(#SVGID_1_)" points="280.789,0 347.076,204.004 561.577,204.004 388.042,330.085 454.328,534.092 280.789,408.01 
+	107.252,534.092 173.538,330.085 0,204.004 214.504,204.004 "/>
 </svg>
 <h2>2eme exercice</h2>
 </body>
