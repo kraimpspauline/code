@@ -1,6 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<script>
+
+		function changeCouleur() {
+
+			var fond = document.getElementById('fond');
+			fond.setAttribute("fill","yellow")
+
+		}
+
+	</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mon premier code</title>
 
@@ -8,19 +18,14 @@
 </head>
 
 <body>
-<h1>Mon super cours</h1>
-<h2>1er exercice</h2>
-<h3>ajouter du SVG</h3>
-<svg width="12cm" height="4cm" viewBox="0 0 1200 400"
-     xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <desc>Example rect01 - rectangle with sharp corners</desc>
-
-  <!-- Show outline of canvas using 'rect' element -->
-  <rect x="1" y="1" width="1198" height="398"
-        fill="none" stroke="blue" stroke-width="2"/>
-
-  <rect onclick="alert('Salutos!')" x="400" y="100" width="400" height="200"
-        fill="yellow" stroke="navy" stroke-width="10"  />
+	<h1>Mon super cours</h1>
+	<h2>1er exercice</h2>
+	<h3>ajouter du SVG</h3>
+		<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+		<rect onclick="alert('toto')" id="fond" x="92.1" y="65.6" fill="#FFFFFF" stroke="#000000" stroke-width="13" stroke-miterlimit="10" width="638" height="458.7"/>
+		<rect x="130.9" y="215.2" fill="none" width="560.3" height="152.1"/>
+		<text onclick="changeCouleur()" id="textee" transform="matrix(1 0 0 1 130.9009 360.07)" font-family="'MyriadPro-Regular'" font-size="204">DAMN</text>
 </svg>
 <h2>2eme exercice</h2>
 </body>
