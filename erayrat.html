@@ -6,10 +6,49 @@
 
 <link rel="stylesheet" type="text/css" href="mystyle.css" />
 <script type="text/javascript">
+
+var colorPrec;
+var colorChange = "green";
+
 function changeCouleur () {
 	var etoile = document.getElementById('etoileRouge');
-	etoile.setAttribute("fill","green");
+	colorPrec = etoile.getAttribute("fill");
+	etoile.setAttribute("fill",colorChange);
+	colorChange = colorPrec;
 }
+
+
+/*var pos = 0;
+var colors = ["green", "blue", "red"];
+var idsElem = ["e1", "e2", "e3"];
+
+function changeCouleur () {
+	//premiere possibilité
+	if (pos==0){
+		var e1 = document.getElementById('e1');
+		e1.setAttribute("fill",colors[pos]);
+	}
+	if (pos==1){
+		var e2 = document.getElementById('e2');
+		e2.setAttribute("fill",colors[pos]);
+	}
+	if (pos==2){
+		var e3 = document.getElementById('e3');
+		e3.setAttribute("fill",colors[pos]);
+	}
+
+	//deuxieme possibilité
+	var el = document.getElementById(idsElem[pos]);
+	el.setAttribute("fill",colors[pos]);
+
+	
+	poss ++;
+	if(pos>2)pos=0;
+
+
+	//change couleur, change taille, change position
+}*/
+
 </script>
 </head>
 

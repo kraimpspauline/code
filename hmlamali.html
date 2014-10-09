@@ -3,6 +3,18 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Mon premier code</title>
 		<link rel="stylesheet" type="text/css" href="mystyle.css" />
+		<script type="text/javascript">
+			var colorPrev;
+			var colorChange='#A9F5BC';
+
+			function changeCouleur(){
+				var trait_bas = document.getElementById('trait_milieu_bas');
+				//trait_bas.setAttribute("fill","#A9F5BC");
+				colorPrev = trait_bas.getAttribute("fill");
+				trait_bas.setAttribute("fill",colorChange);
+				colorChange = colorPrev;
+			}
+		</script>
 	</head>
 
 	<body>
@@ -13,9 +25,9 @@
 	 width="190px" height="150px" viewBox="0 0 190 150" enable-background="new 0 0 190 150" xml:space="preserve">
 <path fill="#1B1464" d="M112.816,37.349c15.966-9.242,26.061-13.885,36.736-4.907c12.932,10.88-6.415,71.59,3.907,77.553
 	c2.878,1.664-17.555,5.47-24.943,0.129c-6.311-4.562,6.695-56.104,3.69-66.982C129.202,32.264,112.816,37.349,112.816,37.349z"/>
-<path fill="#1B1464" d="M111.378,67.945c0,0,2.561-30.701-3.196-35.543c-10.673-8.979-21.126-4.564-37.094,4.679
+<path id="trait_milieu_haut" onClick="changeCouleur()" fill="#1B1464" d="M111.378,67.945c0,0,2.561-30.701-3.196-35.543c-10.673-8.979-21.126-4.564-37.094,4.679
 	c0,0,16.744-4.857,19.749,6.021c1.105,4-1.528,18.55-1.424,24.146C89.516,72.842,111.378,67.945,111.378,67.945z"/>
-<path fill="#1B1464" d="M88.487,79.464c-2.074,14.748-4.482,28.652-1.34,30.924c7.389,5.342,28.209,0.488,24.941-0.127
+<path id="trait_milieu_bas" fill="#1B1464" d="M88.487,79.464c-2.074,14.748-4.482,28.652-1.34,30.924c7.389,5.342,28.209,0.488,24.941-0.127
 	c-6.219-1.171-0.832-27.418-1.695-30.535C109.374,76.049,102.617,80.065,88.487,79.464z"/>
 <path fill="#1B1464" d="M31.596,37.136c15.967-9.243,24.181-13.363,34.857-4.384c12.932,10.878-6.416,71.588,3.906,77.554
 	c2.878,1.661-16.928,4.471-24.941,0.126c-13.822-7.497,3.955-56.977,0.948-67.855C43.362,31.699,31.596,37.136,31.596,37.136z"/>
