@@ -16,11 +16,27 @@
 		fond.setAttribute("fill",colorChange);
 		colorChange = colorPrec;
 	}
+	function init(){
+		
+		queue()
+			.defer(d3.xml, "svg/jpoilvilain.svg", "image/svg+xml")
+			.await(charge);
+		
+	}
+	
+	/*charge le premier svg
+	merci à http://bl.ocks.org/KoGor/8162640
+	*/
+	function charge(error, xml){
+    	//Adding our svg file to HTML document
+		var importedNode = document.importNode(xml.documentElement, true);
+   	  	d3.select("#monSVG").node().appendChild(importedNode);
+	}
 </script>
 
 </head>
 
-<body>
+<body onload="init();">
 <h1>Mon super cours</h1>
 <h2>1er exercice</h2>
 <h3>ajouter du SVG</h3>
@@ -35,6 +51,6 @@
 </svg>
 <h2>2eme exercice</h2>
 <h3>ajouter du SVG en dynamique</h3>
-<div></div>
+<div id="monSVG"></div>
 </body>
 </html>
