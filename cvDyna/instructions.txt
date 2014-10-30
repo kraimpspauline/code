@@ -1,0 +1,4 @@
+- créer la maquette d'une interface dynamique et interactive
+- basée sur un svg de 800px X 600 px
+- nommer le fichier NomPrenom.svg
+ 

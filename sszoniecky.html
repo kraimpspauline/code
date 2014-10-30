@@ -17,20 +17,26 @@
 		colorChange = colorPrec;
 	}
 	function init(){
-		
 		queue()
 			.defer(d3.xml, "svg/jpoilvilain.svg", "image/svg+xml")
 			.await(charge);
-		
 	}
-	
+	function addition(num1, num2){
+		alert(num1+num2);
+	}
 	/*charge le premier svg
 	merci à http://bl.ocks.org/KoGor/8162640
 	*/
 	function charge(error, xml){
-    	//Adding our svg file to HTML document
-		var importedNode = document.importNode(xml.documentElement, true);
-   	  	d3.select("#monSVG").node().appendChild(importedNode);
+	   	//Adding our svg file to HTML document
+		var objXml = document.importNode(xml.documentElement, true);
+		var objDiv = document.getElementById('objSVG');
+		objDiv.appendChild(objXml);
+		//ne marche pas 
+		var monSVG = '<svg><rect x="17.885" y="24.288" fill="#40A62B" width="774.82" height="569.785"/></svg>';
+		var chaineDiv = document.getElementById('chaineSVG');
+		chaineDiv.innerHTML = monSVG;
+		//
 	}
 </script>
 
@@ -51,6 +57,7 @@
 </svg>
 <h2>2eme exercice</h2>
 <h3>ajouter du SVG en dynamique</h3>
-<div id="monSVG"></div>
+<div id="objSVG"></div>
+<div id="chaineSVG"></div>
 </body>
 </html>
